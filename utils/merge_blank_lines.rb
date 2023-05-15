@@ -2,7 +2,7 @@
 
 require 'find'
 
-data_dir = File.expand_path('~/repos/safedata/english/nce-02')
+require_relative 'data_dir'
 
 # merge consecutive blank lines
 def merge_blank_lines(lines)
@@ -28,7 +28,7 @@ def merge_blank_lines(lines)
   new_lines
 end
 
-Find.find(data_dir) do |name|
+Find.find($data_dir) do |name|
   next if ['.', '..'].include?(name)
   next if File.directory? name
 
