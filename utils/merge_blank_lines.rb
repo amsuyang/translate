@@ -44,4 +44,6 @@ Find.find($data_dir) do |name|
     line.chomp!
     file.puts line
   end
+
+  file.close
 end
