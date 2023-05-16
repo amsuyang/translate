@@ -2,7 +2,7 @@
 
 require 'find'
 
-require_relative 'data_dir'
+require_relative 'config'
 
 # merge consecutive blank lines
 def merge_blank_lines(lines)

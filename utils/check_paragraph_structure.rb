@@ -2,7 +2,7 @@
 
 require 'find'
 
-require_relative 'data_dir'
+require_relative 'config'
 
 Find.find($data_dir) do |name|
   next if ['.', '..'].include?(name)
